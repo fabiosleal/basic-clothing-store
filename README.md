@@ -10,16 +10,14 @@ Environment variables maintained in the .env file are made available to the appl
 
 Remember that even though this keeps secure tokens like client id's and secrets out of application code it does not make them secure.
 
-Environment Variable	Description	Example Setting
+| Environment Variable                          | Description         | Example Setting                           |
+| :-------------------------------------------- | :------------------ | :---------------------------------------- |
+| REACT_APP_GOOGLE_FIREBASE_APIKEY              | Api key             | kAdkaJdashuNJJNAshbdaksanldkKNAJsnbahbs   |
+| REACT_APP_GOOGLE_FIREBASE_APP_ID              | App Id              | 8:762198463253:web:98236gh621037p63t923jh |
+| REACT_APP_GOOGLE_FIREBASE_MESSAGING_SENDER_ID | Messaging Sender Id | 76127381754367                            |
+| REACT_APP_GOOGLE_FIREBASE_MEASUREMENT_ID      | Measurement Id      | G-JHSADHSAGJHC                            |
 
-| Environment Variable | Description | Example Setting |
-|:---------------------|:------------|:----------------|
-REACT_APP_GOOGLE_FIREBASE_APIKEY | Api key | kAdkaJdashuNJJNAshbdaksanldkKNAJsnbahbs
-REACT_APP_GOOGLE_FIREBASE_APP_ID | App Id | 8:762198463253:web:98236gh621037p63t923jh
-REACT_APP_GOOGLE_FIREBASE_MESSAGING_SENDER_ID | Messaging Sender Id | 76127381754367
-REACT_APP_GOOGLE_FIREBASE_MEASUREMENT_ID | Measurement Id | G-JHSADHSAGJHC
-
-----
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
