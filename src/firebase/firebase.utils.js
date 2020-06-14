@@ -1,19 +1,21 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import 'firebase/analytics';
 
 const config = {
-  apiKey: 'AIzaSyDowBIHUyuvczcKQPwDdaXnYJrdxh89cME',
-  authDomain: 'basic-clothing-store-db.firebaseapp.com',
-  databaseURL: 'https://basic-clothing-store-db.firebaseio.com',
-  projectId: 'basic-clothing-store-db',
-  storageBucket: 'basic-clothing-store-db.appspot.com',
-  messagingSenderId: '1045996080427',
-  appId: '1:1045996080427:web:cf2b15afedb3bcd640496e',
-  measurementId: 'G-WNT2JQWRYD',
+  apiKey: process.env.REACT_APP_GOOGLE_FIREBASE_APIKEY,
+  authDomain: 'basic-clothing-store.firebaseapp.com',
+  databaseURL: 'https://basic-clothing-store.firebaseio.com',
+  projectId: 'basic-clothing-store',
+  storageBucket: 'basic-clothing-store.appspot.com',
+  messagingSenderId: process.env.REACT_APP_GOOGLE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_GOOGLE_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_GOOGLE_FIREBASE_MEASUREMENT_ID,
 };
 
 firebase.initializeApp(config);
+firebase.analytics();
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
