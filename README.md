@@ -2,6 +2,17 @@
 
 This was coded for a learning purpose.
 
+- HTML, CSS, Sass
+- Javasript
+- React
+  - Class Component (stateful)
+  - Functional Component (stateless)
+  - React Router
+- Google Firebase
+  - auth
+  - firestore
+- Environment Viriables
+
 ## Environment Variables
 
 Environment variables that control the operation of the app are defined in the .env (.env.development.local) file in the application root. These variables and their usage are shown in the following table. It's important to keep in mind that when these settings in the .env file are changed npm run build must be run before they will take effect.
